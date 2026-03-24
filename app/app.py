@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from app.schema import PostCreate, PostResponse
 from app.db import Post, create_db_and_tables, get_sync_session
-from app.db import post
+from app.db import Post
 from sqlalchemy.ext.asyncio import AsyncSession
 from contextlib import asynccontextmanager
 
