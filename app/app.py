@@ -40,7 +40,7 @@ async def upload_file(file: UploadFile = File(...), caption: str = Form(""), ses
             )
         )
 
-        if upload_result.response.http_statuc_code == 200:
+        if upload_result.response_metadata.http_status_code == 200:
 
             post = Post(
                 caption=caption,
